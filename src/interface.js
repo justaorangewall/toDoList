@@ -22,7 +22,7 @@ export default class Interface {
         this.browserDOM.appendChild(this.content);
     }
 
-    displayProjects(projectArray) {
+    displayProjectSide(projectArray) {
         const sideBar=document.querySelector('.sideBar');
         for(let i = 0; i < projectArray.length; i+=1) {
            const  projectCard = document.createElement('div');
@@ -38,5 +38,11 @@ export default class Interface {
            sideBar.appendChild(projectCard);
 
         }
+    }
+
+    viewProjList(projectObject) {
+        const projectContent = document.createElement('div');
+        this.content.textContent = "";
+        this.content.appendChild(projectContent);
     }
 }

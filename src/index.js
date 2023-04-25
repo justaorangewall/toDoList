@@ -29,5 +29,6 @@ console.log(defaultProject);
 const dominterface = new Interface();
 
 dominterface.setUpDOM();
-dominterface.displayProjects(projArray);
+dominterface.displayProjectSide(projArray);
+dominterface.viewProjList(projArray[0]);
 // dominterface.displayProjects([defaultProject]);
