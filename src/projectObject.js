@@ -5,4 +5,6 @@ export default class ProjectObject {
         this.createdDate = createdDate; 
         this.array = array;
     }
+
+    
 }

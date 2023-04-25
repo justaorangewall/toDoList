@@ -1,0 +1,53 @@
+html, body {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    height:100vh;
+}
+
+body {
+    height:100%
+}
+
+.toDoList-interface {
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 4rem 1fr;
+
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    text-align:center;
+    font-size:3rem;
+    background-color: skyblue;
+}
+
+.sideBar {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    grid-template-columns: 1fr 1fr;
+    gap:1rem;
+    padding:1rem;
+}
+
+.sidebar-projectfolder {
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.project-view {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3; 
+}

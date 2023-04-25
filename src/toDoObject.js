@@ -13,7 +13,7 @@ export default class ToDoList{
     #items;
 
     constructor( projectID, dueDate, title="Default", description="Description" ,priority=5, listorCheck="none",items=[[]]) {
-        this.projectID = projectID;
+        this.projID = projectID;
         this.#title = title;
         this.#description = description;
         this.#dueDate = dueDate;
@@ -34,4 +34,8 @@ export default class ToDoList{
         this.#listorCheck = listorCheck;
         this.#items = items;
     }
+
+    get projectID() { return this.projID;}
+    
+    set projectID(num) { this.projID=num;}
 }
