@@ -9,6 +9,15 @@ body {
     height:100%
 }
 
+button {
+    background-color: skyblue;
+    border: none;
+    border-radius: 5px;
+}
+
+button:active {
+    background-color: rgb(71, 171, 211);
+}
 .toDoList-interface {
     display:grid;
     grid-template-columns: 1fr 4fr;
@@ -46,6 +55,8 @@ body {
     align-items: center;
 }
 .project-view {
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
